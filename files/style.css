@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
+.mainDiv {
+    margin: 10px auto;
+}
+
+.user {
+    display: flex;
+    margin: 20px;
+    margin-top: 0px;
+    justify-content: end;
+}
+
+.img-thumbnail {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admDiv {
+    margin: 5px auto;
+}
+
+fieldset {
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+}
+
+.btns {
+    max-height: 62px !important;
+}
+
+.navAdopt {
+    color: #9c4578;
+}
+
+.userImage {
+    width: 60px;
+}
