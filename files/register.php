@@ -111,10 +111,23 @@ if (isset($_POST[ 'btn-signup'])) {
     <meta name="viewport"   content="width=device-width, initial-scale=1.0">
 <title>Login & Registration System </title>
 <?php require_once  '../compos/boot.php'?>
+<style>
+        body{
+        background-color: #76448A ;
+        color: #F5B041;
+    }
+    .conClass{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+</style>
 </head>
 <body>
 <div class ="container ">
-  <form class="w-75 mainDiv"  method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off"  enctype="multipart/form-data">
+  <form class="w-75 mainDiv conClass"  method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off"  enctype="multipart/form-data">
             <h2>Sign Up.</h2>
            <hr/>
            <?php

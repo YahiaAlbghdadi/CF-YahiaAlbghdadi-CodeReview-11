@@ -65,7 +65,7 @@ if($_GET['id']) {
 </table>
 
 <h3 class="mb-4" >Do you really want to delete this User?</h3 >
-<form action="../actions/aDelete.php"  method="post">
+<form action="../actions/aUserDelete.php"  method="post">
   <input type="hidden" name ="id" value= "<?= $id ?>" />
   <input type= "hidden" name= "image" value= "<?= $image ?>" />
   <button class="btn btn-danger"  type="submit"> Yes, delete this User! </button  >

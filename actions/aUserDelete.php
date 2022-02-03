@@ -2,17 +2,21 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }require_once '../compos/connection.php';
-if( !isset($_SESSION['adm']) && !isset ($_SESSION['user']) && !isset ($_SESSION['superAdm']) ) {
-    header("Location: ../files/login.php");
+if (!isset($_SESSION['adm' ]) && !isset($_SESSION['user']) && !isset($_SESSION['superAdm'])) {
+   header("Location: login.php" );
     exit;
-   }
+}
+if ( isset($_SESSION["user"])) {
+   header("Location: home.php");
+   exit;
+}
+
+if ( isset($_SESSION["adm"])) {
+    header("Location: ../files/dashboard.php");
+    exit;
+ }
  
- 
- 
-   if(isset($_SESSION['adm'])){
-       header("location: ../files/dashboard.php");
-   }
- 
+
 $database = new Database;
 $connection = $database->conn;
 $class = 'd-none';
@@ -20,7 +24,7 @@ $class = 'd-none';
 if ($_POST) {
    $id = $_POST['id'];
    $image = $_POST['image'];
-   ($image =="avatar.png")?: unlink("../images/$image");
+   ($image =="animal.png")?: unlink("../images/$image");
 
   $sql = "DELETE FROM accounts WHERE id = {$id}";
   if ($connection->query($sql)) {

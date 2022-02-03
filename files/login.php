@@ -118,7 +118,7 @@ if (session_status() == PHP_SESSION_NONE) {
            <hr/>
            <div class=" btnsDiv">
                <div>
-           <button class="btn btn-block btn-warning"  type="submit" name ="btn-login">SIGN IN</button></div> <div class="d-flex"> <p class="mt-3">OR</p> <a class="text-decoration-none mt-3 ms-2"  type="submit" name ="btn-login">CREATE AN ACCOUNT</a></div>
+           <button class="btn btn-block btn-warning"  type="submit" name ="btn-login">SIGN IN</button></div> <div class="d-flex"> <p class="mt-3">OR</p> <a class="text-decoration-none mt-3 ms-2"  type="submit" href="register.php" name ="btn-login">CREATE AN ACCOUNT</a></div>
            </div>
            <hr/>
         </form>
